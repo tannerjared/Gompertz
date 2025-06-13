@@ -27,3 +27,5 @@ Starting at age 20 (arbitrarily picked)
 |     99.7793|               0.8521|
 
 The 2022 U.S. data show the Gompertz Law does not currently hold. Starting at age 20, it takes 9.8 years to double (which with within the about 8 years of the Gompertz Law). However, it takes about 15 years to have the probability of death double from that at age 30.
+
+![Semi-log plot showing probability of death by age](GompertzPlot.png)
