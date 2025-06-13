@@ -35,4 +35,4 @@ Gompertz's Law appears to not hold true in part through young to middle adulthoo
 
 ## Plot
 
-![Semi-log plot showing probability of death by age](GompertzPlot.png)
+![Semi-log plot showing probability of death by age](DeathProbabilityPlot2022.png)
