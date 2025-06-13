@@ -55,6 +55,20 @@ Gompertz's Law appears to not hold true in part through young to middle adulthoo
 
 Note: Age starts at 30 and the listed age is that where qx (probability of death) about doubles from the previous age (starting at 30).
 
-By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 25 until age 50. There are some slight improvements between ages 4-10 and about 67 though almost 90.
+By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90.
 
 ![Semi-log plot showing probability of death by age](DeathProbabilityPlot20052022.png)
+
+### Differences Investigated: 2005, 2019, 2022
+
+**Gompertz parameters (30–80 yrs)**
+
+2005: alpha = 0.0001, beta = 0.0810, doubling time = **8.6 yrs**
+
+2019: alpha = 0.0002, beta = 0.0702, doubling time = **9.9 yrs**
+
+2022: alpha = 0.0002, beta = 0.0680, doubling time = **10.2 yrs**
+
+This clearly shows a slowing of mortality doubling time. The news is not good, however. As explained above and shown in the figure below, mortality rates are higher in the 23 to 65 age range in 2022 than they were in 2005. That's also true for 2019. That indicates that while the SARS-CoV-2 virus could be a factor in 2022, the data do not suggest it, considering mortality risk is generally lower after age 15 in 2022 than in 2019. There are many potential factors: increased suicides, drug abuse, factors associated with obesity, and more.
+
+![Relative change plot showing 2005, 2019, and 2022 differences in probability of death by age](relative_change_2005_2019_2022.png)
