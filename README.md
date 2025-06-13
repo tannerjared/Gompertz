@@ -40,7 +40,7 @@ Gompertz's Law appears to not hold true in part through young to middle adulthoo
 
 ## 2005 Versus 2022
 
-| Age (2005)| qx (2005)| Age (2022)| qx (2022)|
+| Age to double (2005)| qx (2005)| Age to double (2022)| qx (2022)|
 |----------:|---------:|----------:|---------:|
 |    30.0000|    0.0010|    30.0000|    0.0017|
 |    40.6294|    0.0021|    45.4716|    0.0034|
@@ -52,6 +52,8 @@ Gompertz's Law appears to not hold true in part through young to middle adulthoo
 |    88.5035|    0.1315|    93.7419|    0.2152|
 |    96.6952|    0.2630|    99.1504|    0.4305|
 |    99.3108|    0.5260|    99.7926|    0.8610|
+
+Note: Age starts at 30 and the listed age is that where qx (probability of death) about doubles from the previous age (starting at 30).
 
 By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 25 until age 50. There are some slight improvements between ages 4-10 and about 67 though almost 90.
 
