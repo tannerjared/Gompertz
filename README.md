@@ -33,4 +33,6 @@ The 2022 U.S. data show the Gompertz Law does not currently hold. Starting at ag
 
 Gompertz's Law appears to not hold true in part through young to middle adulthood becuase of increases in mortality in that age range.
 
+## Plot
+
 ![Semi-log plot showing probability of death by age](GompertzPlot.png)
