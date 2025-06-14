@@ -2,13 +2,13 @@
 
 In 1825 it was observed that the probability of dying doubles about every 8 years starting at about age 30: https://en.wikipedia.org/wiki/Gompertz–Makeham_law_of_mortality
 
-## Code
+### Code
 
 Code to calculate and graph annual death probability
 
 2022 CDC Life Table was pulled from here: ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/74-02/table01.xlsx
 
-## Doubling of Death Probability
+### Doubling of Death Probability
 
 Starting at age 20 (arbitrarily picked)
 
@@ -34,7 +34,7 @@ The 2022 U.S. data show the Gompertz Law does not currently hold. Starting at ag
 
 Gompertz's Law appears to not hold true in part through young to middle adulthood becuase of increases in mortality in that age range.
 
-## Plot
+### Plot
 
 ![Semi-log plot showing probability of death by age](DeathProbabilityPlot2022.png)
 
@@ -55,11 +55,25 @@ Gompertz's Law appears to not hold true in part through young to middle adulthoo
 
 Note: Age starts at 30 and the listed age is that where qx (probability of death) about doubles from the previous age (starting at 30).
 
-By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90.
+By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90. Those later life "improvements" might partially be secondary to higher mortality risk in younger adulthood.
 
 ![Semi-log plot showing probability of death by age](DeathProbabilityPlot20052022.png)
 
-### Differences Investigated: 2005, 2019, 2022
+### Sex Stratified 2005 Versus 2022
+
+One question is whether males and females had similar changes in risk of death. The data below show both sexes had increased probabilties of death, which demonstrates that whatever the causes are, they are not unique to males or females. "Gompertz Law" appears to hold more true for women than men.
+
+2005 males: alpha = 0.0001, beta = 0.0796, doubling time = **8.71 yrs**
+
+2005 females: alpha = 0.00004, beta = 0.0853, doubling time = **8.13 yrs**
+
+2022 males: alpha = 0.0002, beta = 0.0654, doubling time = **10.60 yrs**
+
+2022 females: alpha = 0.0001, beta = 0.0740, doubling time = **9.37 yrs**
+
+![Semi-log plot showing probability of death by age and sex in 2005 and 2022](sex_specific_mortality_with_doubling.png)
+
+## Differences Investigated: 2005, 2019, 2022
 
 **Gompertz parameters (30–80 yrs)**
 
