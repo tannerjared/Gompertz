@@ -5,7 +5,7 @@ library(ggplot2)
 library(scales)
 library(knitr)
 
-# 0. (You’ve already done) dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
+# 0. dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
 
 # 1. Parse and clean
 life_table <- dataset %>%
@@ -17,8 +17,8 @@ life_table <- dataset %>%
   ) %>%
   filter(!is.na(Age), !is.na(qx))
 
-# 2. Baseline at age 20, compute doubling thresholds
-baseline_age <- 20
+# 2. Baseline at age 30, compute doubling thresholds
+baseline_age <- 30
 q0 <- life_table$qx[life_table$Age == baseline_age]
 if (length(q0)==0) stop("No row for baseline_age in your data.")
 
@@ -33,14 +33,14 @@ doubling_pts <- approx(
   xout = thresholds
 )
 
-# 3a. Build doubling_df including age 20
+# 3a. Build doubling_df including age 30
 doubling_df <- tibble(
   Age = c(baseline_age, doubling_pts$y),
   qx  = round(c(q0, doubling_pts$x), 4)    # round all qx to four decimals
 )
 
 # 4. Print the doubling table
-cat("Ages at which annual death probability (qx) doubles from age 20:\n")
+cat("Ages at which annual death probability (qx) doubles from age 30:\n")
 kable(
   doubling_df,
   col.names = c("Age (years)", "qx (chance per year)"),
@@ -69,7 +69,7 @@ ggplot(life_table, aes(x = Age, y = qx)) +
     x        = "Age (years)",
     y        = "Chance of death per year (qx)",
     title    = "U.S. Life Table 2022: Mortality by Age",
-    subtitle = "Semi-log plot with doubling markers (baseline = age 20)"
+    subtitle = "Semi-log plot with doubling markers (baseline = age 30)"
   ) +
   theme_classic() +
   theme(
