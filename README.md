@@ -52,7 +52,7 @@ What did the probabilities look like in the past?
 
 Note: Age starts at 30 and the listed age is that where qx (probability of death) about doubles from the previous age (starting at 30).
 
-By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90. Those later life "improvements" might partially be secondary to higher mortality risk in younger adulthood.
+By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90. The increases in young and middle adulthood deaths might be partially due to better infancy and childhood survival. Similarly, the later life "improvements" might partially be secondary to higher mortality risk in younger adulthood. It's unlikely either situation fully explains the changed mortality patterns.
 
 ![Semi-log plot showing probability of death by age](DeathProbabilityPlot20052022.png)
 
