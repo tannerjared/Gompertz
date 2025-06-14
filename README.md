@@ -72,6 +72,8 @@ One unknown is whether males and females had similar changes in risk of death. T
 
 ## Differences Investigated: 2005, 2019, 2022
 
+Let's look at more years. 2019 was added to capture the most recent data before the COVID-19 pandemic started.
+
 **Gompertz parameters (30–80 yrs)**
 
 2005: alpha = 0.0001, beta = 0.0810, doubling time = **8.6 yrs**
@@ -80,6 +82,6 @@ One unknown is whether males and females had similar changes in risk of death. T
 
 2022: alpha = 0.0002, beta = 0.0680, doubling time = **10.2 yrs**
 
-This clearly shows a slowing of mortality doubling time. The news is not good, however. As explained above and shown in the figure below, mortality rates are higher in the 23 to 65 age range in 2022 than they were in 2005. That's also true for 2019. That indicates that while the SARS-CoV-2 virus could be a factor in 2022, the data do not suggest it, considering mortality risk is generally lower after age 15 in 2022 than in 2019. There are many potential factors: increased suicides, drug abuse, factors associated with obesity, and more.
+This clearly shows a slowing of mortality doubling time. The news is not good, however. As explained above and shown in the figure below, mortality rates are higher in the 23 to 65 age range in 2022 than they were in 2005. That's also true for 2019. That indicates that while the SARS-CoV-2 virus could be a factor in 2022, the data do not suggest it plays a major influence, considering mortality risk is generally lower after age 15 in 2022 than in 2019. There are many potential factors: increased suicides, drug abuse, factors associated with obesity, and more that could be affecting the rates in 2019 and 2022 relative to 2005.
 
 ![Relative change plot showing 2005, 2019, and 2022 differences in probability of death by age](relative_change_2005_2019_2022.png)
