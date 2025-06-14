@@ -31,7 +31,7 @@ Gompertz's Law appears to not hold true in 2022.
 
 ### Plot
 
-![Semi-log plot showing probability of death by age](DeathProbabilityPlot2022.png)
+![Semi-log plot showing probability of death by age](2022_mortality.png)
 
 ## 2005 Versus 2022
 
