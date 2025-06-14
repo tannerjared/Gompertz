@@ -1,6 +1,6 @@
 # Gompertz Law of Mortality
 
-In 1825 it was observed that the probability of dying doubles about every 8 years starting at about age 30: https://en.wikipedia.org/wiki/Gompertz–Makeham_law_of_mortality
+In 1825 it was observed that the probability of dying increases exponetially with advancing age. It works out to be doubling about every 8 years starting at about age 30: https://en.wikipedia.org/wiki/Gompertz–Makeham_law_of_mortality
 
 ### Code
 
