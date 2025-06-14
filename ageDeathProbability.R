@@ -5,7 +5,7 @@ library(ggplot2)
 library(scales)
 library(knitr)
 
-# 0. dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
+# 0. (You’ve already done) dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
 
 # 1. Parse and clean
 life_table <- dataset %>%
