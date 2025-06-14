@@ -50,7 +50,7 @@ kable(
 # 5. Plot on a semi‐log scale with 10‐year x‐ticks and 4‐decimal y‐labels
 max_age <- ceiling(max(life_table$Age) / 10) * 10
 
-ggplot(life_table, aes(x = Age, y = qx)) +
+p <- ggplot(life_table, aes(x = Age, y = qx)) +
   geom_line(linewidth = 1) +
   geom_point(
     data  = doubling_df,
@@ -76,3 +76,6 @@ ggplot(life_table, aes(x = Age, y = qx)) +
     panel.grid.major.y = element_line(linetype = "dashed", color = "grey80"),
     panel.grid.minor   = element_blank()
   )
+
+ggsave("2022_mortality.png", p,
+       width = 8, height = 6, dpi = 300, bg = "white")
