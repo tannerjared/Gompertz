@@ -25,9 +25,7 @@ Starting at age 30 (typically picked starting age)
 |     99.1504|               0.4305|
 |     99.7926|               0.8610|
 
-The 2022 U.S. data show the Gompertz Law does not currently hold. Starting at age 30, it takes 15.47 years to double (which is well outside the about 8 years of the Gompertz Law). However, it only takes about 10 years to have the probability of death double from that at age 45.
-
-Gompertz's Law appears to not hold true in 2022.
+The 2022 U.S. data show the Gompertz Law does not currently hold. Starting at age 30, it takes 15.47 years to double (which is well outside the about 8 years of the Gompertz Law). However, from age 45 it takes about 10 years, 9 years from age 55, 9 years from age 64, and then 7 years from age 73, and so forth to have the probability of death double. While Gompertz's Law appears to not hold true in 2022, we can average across time. If we simplify the data, between the ages 30–100 the annual death rate doubles on average every 7.8 ± 4.0 years. If we remove the final value where doubling occurs in less than one year (not strictly true because all deaths ≥100 are lumped together), the average is 8.64 ± 3.15 years. In that sense, while there is considerable variability, the doubling of death probability across much of the adult lifespan occurs about every 8 years. This suggests that the Gompertz Law holds true, although with the caveat that the rate is considerably slower between the ages of 30-60.
 
 ### Plot
 
@@ -52,7 +50,7 @@ What did the probabilities look like in the past?
 
 Note: Age starts at 30 and the listed age is that where qx (probability of death) about doubles from the previous age (starting at 30).
 
-By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90. The increases in young and middle adulthood deaths might be partially due to better infancy and childhood survival. Similarly, the later life "improvements" might partially be secondary to higher mortality risk in younger adulthood. It's unlikely either situation fully explains the changed mortality patterns.
+By plotting data from 2005 versus 2022, we can see why the "Gompertz Law" does not hold as true more recently through young to middle adulthood. Death probabilities were higher in 2022 relative to 2005 starting at about age 23 until age 65, with similar probabilities from about age 50 through 53. There are some slight improvements or similar rates from birth through about age 23 and then improvements between ages 66 though almost 90. The increases in young and middle adulthood deaths might be partially due to better infancy and childhood survival. Similarly, the later life "improvements" might partially be secondary to higher mortality risk in younger adulthood. It's unlikely either situation fully explains the changed mortality patterns.
 
 ![Semi-log plot showing probability of death by age](DeathProbabilityPlot20052022.png)
 
