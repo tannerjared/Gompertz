@@ -37,6 +37,8 @@ long_df <- df %>%
   ) %>%
   mutate(Year = as.integer(Year))
 
+max_age <- ceiling(max(long_df$Age_mid) / 10) * 10
+
 # 4. Compute absolute & relative changes
 cmp_df <- long_df %>%
   pivot_wider(names_from = Year, values_from = qx, names_prefix = "qx_") %>%
@@ -68,9 +70,10 @@ gomp_params <- long_df %>%
     m <- lm(log(qx) ~ Age_mid, data = .)
     co <- coef(m)
     tibble(
-      alpha    = exp(co[1]),
-      beta     = co[2],
-      dbl_time = log(2)/co[2]
+      alpha     = exp(co[1]),
+      beta      = co[2],
+      dbl_time  = log(2)/co[2],
+      r_squared = summary(m)$r.squared
     )
   }) %>%
   ungroup()

@@ -1,11 +1,13 @@
-# install.packages(c("dplyr","readr","ggplot2","scales","knitr"))
+# install.packages(c("readxl","dplyr","readr","ggplot2","scales","knitr"))
+library(readxl)
 library(dplyr)
 library(readr)
 library(ggplot2)
 library(scales)
 library(knitr)
 
-# 0. (You’ve already done) dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
+# 0. Load 2022 CDC Life Table
+dataset <- read_excel("table01.xlsx", sheet = "Sheet1")
 
 # 1. Parse and clean
 life_table <- dataset %>%

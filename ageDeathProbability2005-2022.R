@@ -86,3 +86,7 @@ ggplot(cmp_full, aes(x = Age, y = qx, color = factor(Year), group = Year)) +
   theme(panel.grid.major.y = element_line(linetype = "dashed", color = "grey80"),
         panel.grid.minor   = element_blank(),
         legend.position    = "bottom")
+
+# ---- 6. Save plot ----
+ggsave("DeathProbabilityPlot20052022.png",
+       width = 8, height = 6, dpi = 300, bg = "white")
