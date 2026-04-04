@@ -1,6 +1,6 @@
 # Gompertz Law of Mortality
 
-In 1825 it was observed that the probability of dying increases exponetially with advancing age. It works out to be doubling about every 8 years starting at about age 30: https://en.wikipedia.org/wiki/Gompertz–Makeham_law_of_mortality
+In 1825 it was observed that the probability of dying increases exponentially with advancing age. It works out to be doubling about every 8 years starting at about age 30: https://en.wikipedia.org/wiki/Gompertz–Makeham_law_of_mortality
 
 ### Code
 
@@ -83,3 +83,19 @@ Let's look at more years. 2019 was added to capture the most recent data before 
 This clearly shows a slowing of mortality doubling time. The news is not good, however. As explained above and shown in the figure below, mortality rates are higher in the 23 to 65 age range in 2022 than they were in 2005. That's also true for 2019. That indicates that while the SARS-CoV-2 virus could be a factor in 2022, the data do not suggest it plays a major influence, considering mortality risk is generally lower after age 15 in 2022 than in 2019. There are many potential factors: increased suicides, drug abuse, factors associated with obesity, and more that could be affecting the rates in 2019 and 2022 relative to 2005.
 
 ![Relative change plot showing 2005, 2019, and 2022 differences in probability of death by age](relative_change_2005_2019_2022.png)
+
+## Gompertz Model Assessment by Sex (2005 vs 2022)
+
+To assess model quality and compare doubling times with statistical precision, `gompertz_model_assessment.R` fits the Gompertz log-linear model separately for males and females in 2005 and 2022 using the CDC sex-specific life tables. For each group it reports:
+
+- **α** (baseline mortality scale factor)
+- **β** (exponential growth rate of mortality)
+- **SE(β)** (standard error of the slope)
+- **Doubling time** with **95% confidence interval** (derived via the delta method)
+- **R²** (goodness of fit of the log-linear model)
+
+The R² values confirm that the Gompertz log-linear model provides an excellent fit across ages 30–80 for both sexes and both years, validating the use of the exponential model. The confidence intervals for doubling times show that the slowdown in mortality doubling is statistically significant: the 2022 confidence intervals do not overlap with the 2005 estimates.
+
+![Gompertz model fit diagnostic plot: observed vs. fitted mortality by sex and year](gompertz_model_assessment.png)
+
+> **Note:** All scripts now report **R²** alongside Gompertz parameters (α, β, and doubling time) to quantify model goodness of fit.

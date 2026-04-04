@@ -48,9 +48,10 @@ gompertz_params <- long_df %>%
     m <- lm(log(qx) ~ Age_mid, data = .)
     co <- coef(m)
     tibble(
-      alpha    = exp(co[1]),
-      beta     = co[2],
-      dbl_time = log(2)/co[2]
+      alpha     = exp(co[1]),
+      beta      = co[2],
+      dbl_time  = log(2)/co[2],
+      r_squared = summary(m)$r.squared
     )
   }) %>%
   ungroup()
@@ -92,7 +93,7 @@ p <- ggplot(long_df, aes(
   linetype = Year,
   group    = interaction(Sex, Year)
 )) +
-  geom_line(size = 1) +
+  geom_line(linewidth = 1) +
   geom_point(
     data    = doubling_points,
     inherit.aes = FALSE,
