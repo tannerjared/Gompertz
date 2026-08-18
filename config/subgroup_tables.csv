@@ -1,0 +1,20 @@
+table,population,sex
+1,Total,Both
+2,Total,Male
+3,Total,Female
+4,Hispanic,Both
+5,Hispanic,Male
+6,Hispanic,Female
+7,American Indian or Alaska Native non-Hispanic,Both
+8,American Indian or Alaska Native non-Hispanic,Male
+9,American Indian or Alaska Native non-Hispanic,Female
+10,Asian non-Hispanic,Both
+11,Asian non-Hispanic,Male
+12,Asian non-Hispanic,Female
+13,Black non-Hispanic,Both
+14,Black non-Hispanic,Male
+15,Black non-Hispanic,Female
+16,White non-Hispanic,Both
+17,White non-Hispanic,Male
+18,White non-Hispanic,Female
+

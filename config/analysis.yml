@@ -1,0 +1,33 @@
+project:
+  first_year: 2005
+  last_year: 2023
+  reference_year: 2005
+  latest_year: 2023
+gompertz:
+  primary_age_min: 30
+  primary_age_max: 80
+  centered_age: 50
+  rolling_half_width: 7
+  rolling_centers: [37, 42, 47, 52, 57, 62, 67, 72, 77, 82]
+age_windows:
+  - {label: "30–49", age_min: 30, age_max: 49}
+  - {label: "50–69", age_min: 50, age_max: 69}
+  - {label: "70–89", age_min: 70, age_max: 89}
+  - {label: "30–80", age_min: 30, age_max: 80}
+  - {label: "40–85", age_min: 40, age_max: 85}
+  - {label: "50–90", age_min: 50, age_max: 90}
+model_comparison:
+  years: [2005, 2019, 2022, 2023]
+  age_min: 30
+  age_max: 95
+state_analysis:
+  years: [2019, 2022]
+  age_min: 40
+  age_max: 80
+cause_analysis:
+  years: [2005, 2019, 2022, 2023]
+  age_min: 15
+  age_max: 99
+  display_age_min: 20
+  display_age_max: 69
+

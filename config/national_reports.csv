@@ -1,0 +1,21 @@
+year,report_id,report_pdf,filename_pattern,max_table,revision
+2005,58_10,https://www.cdc.gov/nchs/data/nvsr/nvsr58/nvsr58_10.pdf,Table%02d_Intercensal.xls,3,revised intercensal
+2006,58_21,https://www.cdc.gov/nchs/data/nvsr/nvsr58/nvsr58_21.pdf,Table%02d_Intercensal.xlsx,3,revised intercensal
+2007,59_09,https://www.cdc.gov/nchs/data/nvsr/nvsr59/nvsr59_09.pdf,Table%02d_Intercensal.xlsx,3,revised intercensal
+2008,61_03,https://www.cdc.gov/nchs/data/nvsr/nvsr61/nvsr61_03.pdf,Table%02d_Intercensal.xlsx,3,revised intercensal
+2009,62_07,https://www.cdc.gov/nchs/data/nvsr/nvsr62/nvsr62_07.pdf,Table%02d_Intercensal.xlsx,3,revised intercensal
+2010,63_07,https://www.cdc.gov/nchs/data/nvsr/nvsr63/nvsr63_07.pdf,Table%02d.xlsx,3,final
+2011,64_11,https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_11.pdf,Table%02d.xlsx,3,final
+2012,65_08,https://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_08.pdf,Table%02d.xlsx,3,final
+2013,66_03,https://www.cdc.gov/nchs/data/nvsr/nvsr66/nvsr66_03.pdf,Table%02d.xlsx,3,final
+2014,66_04,https://www.cdc.gov/nchs/data/nvsr/nvsr66/nvsr66_04.pdf,Table%02d.xlsx,3,final
+2015,67_07,https://www.cdc.gov/nchs/data/nvsr/nvsr67/nvsr67_07-508.pdf,Table%02d.xlsx,3,final
+2016,68_04,https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_04-508.pdf,Table%02d.xlsx,3,final
+2017,68_07,https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_07-508.pdf,Table%02d.xlsx,3,final
+2018,69-12,https://www.cdc.gov/nchs/data/nvsr/nvsr69/nvsr69-12-508.pdf,Table%02d.xlsx,3,final
+2019,70-19,https://www.cdc.gov/nchs/data/nvsr/nvsr70/nvsr70-19.pdf,Table%02d.xlsx,18,final
+2020,71-01,https://www.cdc.gov/nchs/data/nvsr/nvsr71/nvsr71-01.pdf,Table%02d.xlsx,18,final
+2021,72-12,https://www.cdc.gov/nchs/data/nvsr/nvsr72/nvsr72-12.pdf,Table%02d.xlsx,18,final
+2022,74-02,https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-02.pdf,Table%02d.xlsx,18,final
+2023,74-06,https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-06.pdf,Table%02d.xlsx,18,final
+

@@ -1,0 +1,12 @@
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+renv/library/
+renv/staging/
+_targets/
+data-raw/downloads/
+data-raw/mortality_zips/
+analysis/report_cache/
+analysis/report_files/
+
