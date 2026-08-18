@@ -1,0 +1,34 @@
+Package: gompertzMortality
+Title: Reproducible Analysis of United States Adult Mortality
+Version: 1.0.0
+Authors@R: person("Jared", "Tanner", role = c("aut", "cre"))
+Description: Downloads official NCHS life tables, estimates and compares adult
+    mortality models, evaluates age-window sensitivity, studies demographic and
+    state variation, and decomposes changes by underlying cause of death.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports:
+    broom,
+    digest,
+    dplyr,
+    ggplot2,
+    knitr,
+    mgcv,
+    patchwork,
+    purrr,
+    readr,
+    readxl,
+    rmarkdown,
+    scales,
+    splines,
+    stringr,
+    tarchetypes,
+    targets,
+    tibble,
+    tidyr,
+    yaml
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+

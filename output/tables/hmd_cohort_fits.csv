@@ -1,0 +1,1 @@
+population_code,birth_cohort,sex,age_min,age_max,centered_age,mortality_at_center,beta,beta_se,beta_ci_low,beta_ci_high,doubling_time,doubling_ci_low,doubling_ci_high,r_squared,rmse_log,n_ages

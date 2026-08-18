@@ -1,0 +1,50 @@
+name: Rebuild analysis
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.6.1'
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Install Linux system dependencies
+        run: |
+          sudo apt-get install --yes cmake libglpk-dev libx11-dev pandoc
+
+      - uses: actions/cache@v4
+        with:
+          path: data-raw/downloads
+          key: nchs-${{ hashFiles('config/national_reports.csv', 'config/state_reports.csv', 'config/subgroup_tables.csv') }}
+
+      - uses: r-lib/actions/setup-renv@v2
+
+      - name: Rebuild all generated artifacts
+        run: Rscript -e 'targets::tar_make()'
+
+      - name: Install test dependency
+        run: Rscript -e 'renv::install("testthat@3.3.2", prompt = FALSE)'
+
+      - name: Run tests
+        run: Rscript -e 'testthat::test_dir("tests/testthat")'
+
+      - name: Verify generated outputs
+        run: |
+          test -s README.md
+          test -s output/tables/annual_gompertz_fits.csv
+          test -s data/derived/life_tables_2005_2023.csv
+          git diff --stat -- README.md output/tables data/derived
