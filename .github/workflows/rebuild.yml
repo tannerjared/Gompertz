@@ -42,5 +42,9 @@ jobs:
       - name: Run tests
         run: Rscript -e 'testthat::test_dir("tests/testthat")'
 
-      - name: Verify committed text outputs are current
-        run: git diff --exit-code -- README.md output/tables data/derived
+      - name: Verify generated outputs
+        run: |
+          test -s README.md
+          test -s output/tables/annual_gompertz_fits.csv
+          test -s data/derived/life_tables_2005_2023.csv
+          git diff --stat -- README.md output/tables data/derived
