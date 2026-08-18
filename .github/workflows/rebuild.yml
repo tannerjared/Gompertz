@@ -36,6 +36,9 @@ jobs:
       - name: Rebuild all generated artifacts
         run: Rscript -e 'targets::tar_make()'
 
+      - name: Install test dependency
+        run: Rscript -e 'renv::install("testthat@3.3.2", prompt = FALSE)'
+
       - name: Run tests
         run: Rscript -e 'testthat::test_dir("tests/testthat")'
 
