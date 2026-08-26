@@ -43,11 +43,12 @@ years in 2005 to 10.1 years in 2023. That is not uniform across adulthood, howev
 alt="Age-window sensitivity" />
 <figcaption aria-hidden="true">Age-window sensitivity</figcaption>
 </figure>
-<br>
+
+
 The major departure from the earlier about 8 year doubling curve is concentrated in younger
 adulthood. Later-adult slopes are much more stable. This means that rather than a simple linear fit, a
 moving-window or age-segmentation is more informative than a single “law” fitted over 50 years of age.
-</br>
+
 <figure>
 <img src="output/figures/rolling_doubling_heatmap.png"
 alt="Local doubling-time heatmap" />
